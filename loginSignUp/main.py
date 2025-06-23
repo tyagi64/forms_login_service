@@ -61,6 +61,7 @@ def login()->Tuple[str,int]:
         print(e)
         output:Tuple[str,int] = "Bad Request 434",400
 
+    print(output)
     return output
 
 @app.route('/check_session',methods=['POST'])
